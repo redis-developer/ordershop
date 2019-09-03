@@ -6,7 +6,7 @@ Click here for more details: https://redislabs.com/blog/use-redis-event-store-co
 ## Start
 - `docker-compose up`
 
-## Run
+## Test
 - `python3 -m unittest client/client.py`
 
 ## Stop
