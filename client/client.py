@@ -5,8 +5,6 @@ import string
 import unittest
 import urllib.request
 
-import redis
-
 
 BASE_URL = 'http://localhost:5000'
 
@@ -137,13 +135,6 @@ class OrderShopTestCase(unittest.TestCase):
 
     def __init__(self, method_name='runTest'):
         super(OrderShopTestCase, self).__init__(method_name)
-
-    @classmethod
-    def setUpClass(cls):
-
-        # clear state
-        r = redis.StrictRedis(decode_responses=True)
-        r.flushdb()
 
     def test_1_create_customers(self):
 
