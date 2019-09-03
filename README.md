@@ -1,8 +1,13 @@
 # OrderShop
 Redis as an event store in a microservices architecture.
 
-Start the application by `docker-compose up`.
+Click here for more details: https://redislabs.com/blog/use-redis-event-store-communication-microservices
 
-Install dependencies by `pip3 install -r client/requirements.txt`.
+## Start
+-`docker-compose up`
 
-Then execute the client by `python3 -m unittest client/client.py`.
+## Run
+-`python3 -m unittest client/client.py`
+
+## Stop
+-`docker-compose down`
