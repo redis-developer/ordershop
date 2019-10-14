@@ -175,7 +175,7 @@ class EventStore(object):
         :param _item: A dict with entity properties.
         """
         if self.domain_model.exists(_topic):
-            entity = json.loads(_item[1][0][1]['entity'])
+            entity = json.loads(_item['entity'])
             self.domain_model.create(_topic, entity)
 
     def _entity_deleted(self, _topic, _item):
@@ -186,7 +186,7 @@ class EventStore(object):
         :param _item: A dict with entity properties.
         """
         if self.domain_model.exists(_topic):
-            entity = json.loads(_item[1][0][1]['entity'])
+            entity = json.loads(_item['entity'])
             self.domain_model.delete(_topic, entity)
 
     def _entity_updated(self, _topic, _item):
@@ -197,7 +197,7 @@ class EventStore(object):
         :param _item: A dict with entity properties.
         """
         if self.domain_model.exists(_topic):
-            entity = json.loads(_item[1][0][1]['entity'])
+            entity = json.loads(_item['entity'])
             self.domain_model.update(_topic, entity)
 
 
@@ -219,25 +219,30 @@ class Subscriber(threading.Thread):
         self.subscribed = True
         self.handlers = [_handler]
         self.redis = _redis
+        self.last_id = '$'
 
     def __len__(self):
         return len(self.handlers)
 
+    def _read_stream(self):
+        streams = {self.key: self.last_id}
+        for stream_name, events in self.redis.xread(streams, block=1000):
+            for event_id, event in events:
+                yield event
+                self.last_id = event_id
+
     def run(self):
         """
-        Poll the event stream and call each handler with each entry returned.
+        Poll the event stream and call each handler with each event item returned.
         """
         if self._running:
             return
 
-        last_id = '$'
         self._running = True
         while self.subscribed:
-            items = self.redis.xread({self.key: last_id}, block=1000) or []
-            for item in items:
+            for item in self._read_stream():
                 for handler in self.handlers:
                     handler(item)
-                last_id = item[1][0][0]
         self._running = False
 
     def stop(self):
