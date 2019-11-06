@@ -1,7 +1,7 @@
 # OrderShop
 Redis as an event store in a microservices architecture.
 
-Click here for more details: https://redislabs.com/blog/use-redis-event-store-communication-microservices
+See https://redislabs.com/blog/use-redis-event-store-communication-microservices for a detailed description.
 
 ## Start
 - `docker-compose up`
