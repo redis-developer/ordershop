@@ -27,7 +27,7 @@ By listening to the domain events and keeping the entity cache up to date, the a
 
 ## Under the hood
 
-Below are some sample test cases from client.py, along with corresponding Redis data types and keys.
+Below are some sample test cases from [client.py](https://github.com/redis-developer/ordershop/blob/master/client/client.py), along with corresponding Redis data types and keys.
 
 ![image](https://user-images.githubusercontent.com/313480/151546605-2b01b1d2-22c5-4d7d-a011-4ca26a0a9616.png)
 
