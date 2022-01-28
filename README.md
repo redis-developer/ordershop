@@ -6,7 +6,7 @@ Building an Event Store using Redis.
 ## Architecture
 
 
-The following diagram shows the inter-connectivity of nine decoupled microservices that use an event store built with Redis Streams for inter-services communication. They do this by listening to any newly created events on the specific event stream in an event store, i.e. a Redis instance.
+The following diagram shows the inter-connectivity of nine decoupled microservices that use an event store built with [Redis Streams](https://redis.io/topics/streams-intro) for inter-services communication. They do this by listening to any newly created events on the specific event stream in an event store, i.e. a Redis instance.
 
 ![image](https://user-images.githubusercontent.com/313480/151544356-a716df28-2798-49fd-b46d-7ac715d04e4e.png)
 
