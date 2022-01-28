@@ -1,0 +1,29 @@
+{
+  "app_name": "OrderShop",
+  "description": "Building an Event Store based on microservices using Redis",
+  "type": "Building Block",
+  "contributed_by": "Community",
+  "repo_url": "https://github.com/redis-developer/BlobChat",
+  "preview_image_url": "https://raw.githubusercontent.com/redis-developer/ordershop/main/app_preview_image.jpg",
+  "download_url": "https://github.com/redis-developer/ordershop/archive/refs/heads/main.zip",
+  "hosted_url": "",
+  "quick_deploy": "false",
+  "deploy_buttons": [],
+  "language": [
+    "JavaScript"
+  ],
+  "redis_commands": [],
+  "redis_features": [
+    "Streams"
+  ],
+  "redis_modules": [],
+  "app_image_urls": [],
+  "youtube_url": "",
+  "special_tags": [
+    "Hackathon"
+  ],
+  "verticals": [
+    "Retail"
+  ],
+  "markdown": "https://raw.githubusercontent.com/redis-developer/ordershop/main/README.md"
+}
