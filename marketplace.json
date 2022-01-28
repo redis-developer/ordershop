@@ -4,8 +4,8 @@
   "type": "Building Block",
   "contributed_by": "Community",
   "repo_url": "https://github.com/redis-developer/BlobChat",
-  "preview_image_url": "https://raw.githubusercontent.com/redis-developer/ordershop/main/app_preview_image.jpg",
-  "download_url": "https://github.com/redis-developer/ordershop/archive/refs/heads/main.zip",
+  "preview_image_url": "https://raw.githubusercontent.com/redis-developer/ordershop/master/app_preview_image.jpg",
+  "download_url": "https://github.com/redis-developer/ordershop/archive/refs/heads/master.zip",
   "hosted_url": "",
   "quick_deploy": "false",
   "deploy_buttons": [],
@@ -25,5 +25,5 @@
   "verticals": [
     "Retail"
   ],
-  "markdown": "https://raw.githubusercontent.com/redis-developer/ordershop/main/README.md"
+  "markdown": "https://raw.githubusercontent.com/redis-developer/ordershop/master/README.md"
 }
