@@ -17,7 +17,7 @@
     "Streams"
   ],
   "redis_modules": [],
-  "app_image_urls": ["https://raw.githubusercontent.com/redis-developer/ordershop/master/app_preview_image2.jpg"],
+  "app_image_urls": ["https://raw.githubusercontent.com/redis-developer/ordershop/master/app_preview_image2.png"],
   "youtube_url": "",
   "special_tags": [
     "Hackathon"
