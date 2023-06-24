@@ -2,7 +2,7 @@
   "app_name": "OrderShop",
   "description": "Building an Event Store based on microservices using Redis",
   "type": "Building Block",
-  "contributed_by": "Redis Labs",
+  "contributed_by": "Redis",
   "repo_url": "https://github.com/redis-developer/ordershop",
   "preview_image_url": "https://raw.githubusercontent.com/redis-developer/ordershop/master/app_preview_image.jpg",
   "download_url": "https://github.com/redis-developer/ordershop/archive/refs/heads/master.zip",
@@ -13,10 +13,10 @@
     "JavaScript"
   ],
   "redis_commands": [],
-  "redis_features": [
+  "redis_use_cases": [
     "Streams"
   ],
-  "redis_modules": [],
+  "redis_features": [],
   "app_image_urls": ["https://raw.githubusercontent.com/redis-developer/ordershop/master/app_preview_image2.png"],
   "youtube_url": "",
   "special_tags": [
